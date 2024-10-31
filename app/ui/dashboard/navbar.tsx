@@ -4,7 +4,9 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from "@heroicons/react/24/outline";
+import { FaBeer } from "react-icons/fa";
 import Image from "next/image";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const links = [
   { name: "Home", href: "/", icon: HomeIcon },
@@ -24,7 +26,7 @@ const linkToSing = [
 export default function NavBar() {
   return (
     <>
-      <nav className="bg-white dark:bg-[#111022] fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className="bg-white dark:bg-[#111022] fixed w-full z-20 top-0 start-0 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -64,10 +66,13 @@ export default function NavBar() {
                     <a
                       href={link.href}
                       key={link.name}
-                      className="group relative inline-block overflow-hidden rounded px-12 py-3 text-sm font-medium text-white  active:text-white"
+                      className="group relative inline-flex items-center overflow-hidden rounded px-12 py-3 text-sm font-medium text-white  active:text-white"
                     >
                       <span className="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-500 group-hover:w-full"></span>
                       {link.name}
+                      <span className="ml-2">
+                        <RiArrowDropDownLine />
+                      </span>
                     </a>
                   );
                 })}
