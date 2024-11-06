@@ -1,6 +1,8 @@
+'use client'
 import NavBar from './ui/dashboard/navbar';
 import { montserrat } from './ui/fonts';
 import './ui/global.css';
+
 
 export default function RootLayout({
   children,
