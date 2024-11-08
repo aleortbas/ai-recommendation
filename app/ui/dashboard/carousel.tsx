@@ -18,7 +18,7 @@ export default function Carousel() {
       <div className="keen-slider__slide number-slide1 flex justify-center bg-inherit bg-inherit">
         <a
           href="#"
-          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-gray-800 dark:border-gray-700 "
+          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-[#15152C] dark:border-[#3C3C77] "
         >
           <div className="mb-2  tracking-tight">
             <img src="ilustrations/undraw_playlist_re_1oed.svg" height={200} width={200}/>
@@ -32,7 +32,7 @@ export default function Carousel() {
       <div className="keen-slider__slide number-slide2 flex justify-center bg-inherit ">
       <a
           href="#"
-          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-gray-800 dark:border-gray-700 "
+          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-[#15152C] dark:border-[#3C3C77] "
         >
           <div className="mb-2  tracking-tight">
             <img src="ilustrations/undraw_electric_car_b-7-hl.svg" height={200} width={200}/>
@@ -46,7 +46,7 @@ export default function Carousel() {
       <div className="keen-slider__slide number-slide3 flex justify-center bg-inherit">
       <a
           href="#"
-          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-gray-800 dark:border-gray-700 "
+          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-[#15152C] dark:border-[#3C3C77] "
         >
           <div className="mb-2  tracking-tight">
             <img src="ilustrations/undraw_in_no_time_-6-igu(1).svg" height={200} width={200}/>
@@ -60,7 +60,7 @@ export default function Carousel() {
       <div className="keen-slider__slide number-slide4 flex justify-center bg-inherit">
       <a
           href="#"
-          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-gray-800 dark:border-gray-700 "
+          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-[#15152C] dark:border-[#3C3C77] "
         >
           <div className="mb-2  tracking-tight">
             <img src="ilustrations/undraw_programming_re_kg9v.svg" height={200} width={200}/>
@@ -74,7 +74,7 @@ export default function Carousel() {
       <div className="keen-slider__slide number-slide5 flex justify-center bg-inherit">
       <a
           href="#"
-          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-gray-800 dark:border-gray-700 "
+          className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-500 hover:border-[#affb1a] hover:border-b-[2.5px] dark:bg-[#15152C] dark:border-[#3C3C77] "
         >
           <div className="mb-2  tracking-tight">
             <img src="ilustrations/undraw_news_re_6uub.svg" height={200} width={200}/>
