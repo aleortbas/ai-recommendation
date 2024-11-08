@@ -11,6 +11,8 @@ export default function RootLayout({
 }) {
   return (
 <html lang="en">
+  <head>
+  </head>
   <body className={`${montserrat.className} bg-[#111022] min-h-screen flex flex-col`}>
     {/* NavBar remains fixed at the top */}
     <nav>
@@ -25,6 +27,7 @@ export default function RootLayout({
     <footer className="py-10 flex justify-center items-center">
       Hecho con amor
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
 
