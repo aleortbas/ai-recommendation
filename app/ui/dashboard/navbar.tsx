@@ -7,6 +7,7 @@ import {
 import { FaBeer } from "react-icons/fa";
 import Image from "next/image";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { link } from "fs";
 
 const links = [
   { name: "Home", href: "/", icon: HomeIcon },
@@ -20,7 +21,7 @@ const links = [
 
 const linkToSing = [
   { name: "Login", href: "/login" },
-  { name: "Sign Up", href: "/login/signUp" },
+  { name: "Sign Up", href: "/login/signup" },
 ];
 
 export default function NavBar() {
@@ -42,18 +43,18 @@ export default function NavBar() {
             </span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
+
+          {linkToSing.map((link) =>{
+            return(
+              <a
+              href={link.href}
               type="button"
               className="text-white bg-inherit border-2 border-transparent transition duration-500 hover:border-[#fd7e14] hover:text-[#fd7e14] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
             >
-              Login
-            </button>
-            <button
-              type="button"
-              className="text-white bg-inherit border-2 border-transparent transition duration-500 hover:border-[#fd7e14] hover:text-[#fd7e14] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center "
-            >
-              Sign Up
-            </button>
+              {link.name}
+            </a>  
+            )
+          })}
           </div>
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
