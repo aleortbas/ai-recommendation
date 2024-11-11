@@ -24,9 +24,11 @@ export default function page() {
               <FaApple className="text-black" /> Continue With Google
             </button>
 
-            <p className="font-normal 950 dark:text-gray-800 transition duration-500 hover:text-[#8677FF] mb-12">
-              Or sign in with your email.
-            </p>
+            <div className="mb-12">
+                <a href="/login/signup" className="font-normal dark:text-gray-800 transition duration-500 hover:text-[#8677FF]">
+                Or sign in with your email.
+                </a>
+            </div>
 
             <div className="relative mb-3">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
