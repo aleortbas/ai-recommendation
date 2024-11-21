@@ -27,9 +27,7 @@ export default function page() {
       body: JSON.stringify({ email, password })
     })
     if(response.ok){
-      /* router.push('/profile') */
-      const data = await response.json()
-      console.log(data);
+      router.push('/profile')
       
     }else{
       console.log('error post');
