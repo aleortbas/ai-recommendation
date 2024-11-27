@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { FormEvent } from "react";
-import { stringify } from "querystring";
 
 export default function page() {
     const router = useRouter();
@@ -17,21 +16,24 @@ export default function page() {
     const email = formData.get('email')
     const password = formData.get('password')
 
-    console.log("email", email);
-    console.log("pass", password);
-    
-
-    const response = await fetch('http://localhost:5000/login', {
-      method: 'POST', 
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    })
-    if(response.ok){
-      router.push('/profile')
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST', 
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password })
+      })
+      console.log("response: " , response);
       
-    }else{
-      console.log('error post');
-      
+      if (response.ok) {
+        const data = await response.json();
+        router.push('/profile');
+      } else {
+        const errorData = await response.json();
+        console.log("Error response:", response.status, errorData);
+      }
+    } catch (error) { 
     }
   }
   return (
