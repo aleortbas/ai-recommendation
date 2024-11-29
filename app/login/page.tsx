@@ -24,7 +24,6 @@ export default function page() {
         },
         body: JSON.stringify({ email, password })
       })
-      console.log("response: " , response);
       
       if (response.ok) {
         const data = await response.json();
